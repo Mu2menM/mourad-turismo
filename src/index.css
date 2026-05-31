@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-cream: #FDF8F0;
   --color-cream-dark: #F5EDE3;
@@ -8,6 +10,8 @@
   --color-accent-light: #2C7DA0;
   --color-gold: #C8963E;
   --color-dark: #1a1a2e;
+  --color-surface: #22223a;
+  --color-surface-light: #2a2a45;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 }
@@ -20,4 +24,8 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
   margin: 0;
+}
+
+.dark body {
+  background-color: var(--color-dark);
 }
