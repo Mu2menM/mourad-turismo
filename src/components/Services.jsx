@@ -1,14 +1,18 @@
 import { Plane, MapPin, Hotel, Compass } from 'lucide-react'
 import { useLang } from '../context/LanguageContext'
+import toursImg from '../assets/images/tours.jpg'
+import flightsImg from '../assets/images/flights.jpg'
+import hotelImg from '../assets/images/hotel.jpg'
+import consultingImg from '../assets/images/consulting.jpg'
 
 export default function Services() {
   const { t } = useLang()
 
   const services = [
-    { icon: MapPin, title: t.services.item1Title, text: t.services.item1Text, image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80' },
-    { icon: Plane, title: t.services.item2Title, text: t.services.item2Text, image: 'https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=600&q=80' },
-    { icon: Hotel, title: t.services.item3Title, text: t.services.item3Text, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80' },
-    { icon: Compass, title: t.services.item4Title, text: t.services.item4Text, image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80' },
+    { icon: MapPin, title: t.services.item1Title, text: t.services.item1Text, image: toursImg },
+    { icon: Plane, title: t.services.item2Title, text: t.services.item2Text, image: flightsImg },
+    { icon: Hotel, title: t.services.item3Title, text: t.services.item3Text, image: hotelImg },
+    { icon: Compass, title: t.services.item4Title, text: t.services.item4Text, image: consultingImg },
   ]
 
   return (
