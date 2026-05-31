@@ -105,7 +105,7 @@ export default function Contact() {
       <div className="relative w-full">
         <iframe
           title="Mourad Turismo - Florianópolis"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Florianópolis,SC,Brazil&zoom=12"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-48.6200%2C-27.6800%2C-48.4000%2C-27.5000&layer=mapnik&marker=-27.5953,-48.5482"
           width="100%"
           height="450"
           style={{ border: 0, display: 'block' }}
