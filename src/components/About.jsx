@@ -15,9 +15,13 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-6">
+          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">
             {t.about.title}
+          </p>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-6">
+            MOURAD TURISMO
           </h2>
+          <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full" />
           <p className="text-lg text-dark/60 leading-relaxed">
             {t.about.description}
           </p>
@@ -28,10 +32,10 @@ export default function About() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-cream-dark/30"
+              className="group bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 border border-cream-dark/20 text-center"
             >
-              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-                <card.icon size={28} className="text-accent" />
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent-light rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-md">
+                <card.icon size={28} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-dark mb-3">
                 {card.title}
