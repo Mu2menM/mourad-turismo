@@ -1,4 +1,14 @@
 import { MapPin, Phone, Mail } from 'lucide-react'
+
+function InstagramIcon({ size = 13, className = '' }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  )
+}
 import { useLang } from '../context/LanguageContext'
 
 export default function Footer() {
@@ -26,6 +36,10 @@ export default function Footer() {
             <a href="mailto:mourad@jorelo.com.br" className="text-sm flex items-center gap-2 hover:text-white transition-colors">
               <Mail size={13} />
               {t.contact.email}
+            </a>
+            <a href="https://www.instagram.com/mourad.turismo/" target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-2 hover:text-white transition-colors">
+              <InstagramIcon size={13} />
+              @mourad.turismo
             </a>
           </div>
 
